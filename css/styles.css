@@ -13,7 +13,6 @@ header {
   background: #0077a3;
   color: white;
   padding: 1em;
-  z-index: 400;
 }
 
 header h1 {
@@ -92,7 +91,7 @@ footer {
   width: 
 
 html {
-  scroll-padding-top: 400px;
+  scroll-padding-top: -400px;
   scroll-behavior: smooth;
 }
 
