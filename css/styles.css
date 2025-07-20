@@ -91,6 +91,13 @@ footer {
 .footer-field {
   width: 
 
-  #pre-carousel {
-  scroll-margin-top: 100px; /* Adjust to match header height */
+.offset-anchor {
+  position: relative;
+  top: -200px; /* Approx. height of your fixed header */
+  height: 0;
+}
+
+/* Optional smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
