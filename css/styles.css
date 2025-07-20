@@ -91,7 +91,7 @@ footer {
 .footer-field {
   width: 
 
-/* 🔼 Back to Top button styling */
+/* Basic styling for the Back to Top link */
 .back-to-top {
   display: inline-block;
   padding: 10px 15px;
@@ -100,20 +100,30 @@ footer {
   border-radius: 5px;
   text-decoration: none;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .back-to-top:hover {
   background-color: #005fa3;
 }
 
-/* 🧭 Scroll offset for carousel */
-#carousel.scroll-offset {
-  position: relative;
+/* Add scroll offset with padding trick */
+#carousel::before {
+  content: "";
+  display: block;
+  height: 0;
 }
 
-/* 💻 Desktop: scroll lands higher above carousel */
+/* 📱 Mobile: scrolls to carousel normally */
+@media (max-width: 720px) {
+  #carousel::before {
+    height: 0; /* no offset */
+  }
+}
+
+/* 💻 Desktop: scrolls 200px higher than carousel */
 @media (min-width: 721px) {
-  #carousel.scroll-offset {
-    top: -200px;
+  #carousel::before {
+    height: 200px; /* scroll lands 200px earlier */
   }
 }
