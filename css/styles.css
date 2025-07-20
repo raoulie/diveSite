@@ -114,6 +114,6 @@ footer {
 /* 💻 Desktop: scroll lands higher above carousel */
 @media (min-width: 721px) {
   #carousel.scroll-offset {
-    top: 200px;
+    top: -200px;
   }
 }
