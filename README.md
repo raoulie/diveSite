@@ -1,0 +1,2 @@
+# diveSite
+template website diveschool
