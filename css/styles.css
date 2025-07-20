@@ -90,3 +90,7 @@ footer {
 
 .footer-field {
   width: 
+
+  #pre-carousel {
+  scroll-margin-top: 100px; /* Adjust to match header height */
+}
