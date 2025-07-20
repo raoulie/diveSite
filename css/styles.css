@@ -1,0 +1,159 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0077a3;
+  color: white;
+  padding: 1em;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0 0 0.5em;
+  font-size: 1.8em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main {
+  padding-top: 140px;
+}
+
+.carousel-item {
+  display: inline-block;
+  margin: 0.5em;
+  padding: 1em;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.detail-section {
+  margin: 2em 0;
+  padding: 2em;
+  color: #fff;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.detail-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+.detail-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.text, img {
+  width: 45%;
+  margin-bottom: 1em;
+}
+
+img {
+  height: auto;
+  border-radius: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background: #333;
+  color: #fff;
+  padding: 2em 1em;
+  flex-wrap: wrap;
+}
+
+.footer-field {
+  width: 22%;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+/* 🎨 Background Images */
+.bg-night {
+  background-image: url('night-dive-bg.jpg');
+}
+
+.bg-wreck {
+  background-image: url('wreck-dive-bg.jpg');
+}
+
+.bg-cave {
+  background-image: url('cave-dive-bg.jpg');
+}
+
+.bg-open {
+  background-image: url('openwater-bg.jpg');
+}
+
+.bg-advanced {
+  background-image: url('advanced-bg.jpg');
+}
+
+@media (max-width: 720px) {
+  header {
+    position: static;
+    text-align: center;
+  }
+
+  header h1 {
+    position: sticky;
+    top: 0;
+    background: #0077a3;
+    padding: 1em 0;
+    z-index: 1000;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  .layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text, img {
+    width: 90%;
+  }
+
+  .footer-field {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .carousel-item {
+    display: block;
+    text-align: center;
+  }
+}
