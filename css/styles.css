@@ -1,4 +1,3 @@
-/* Base Layout */
 body {
   font-family: sans-serif;
   margin: 0;
@@ -90,68 +89,4 @@ footer {
 }
 
 .footer-field {
-  width: 22%;
-  text-align: center;
-  margin: 0.5em 0;
-}
-
-/* Backgrounds */
-.bg-night {
-  background-image: url('night-dive-bg.jpg');
-}
-
-.bg-wreck {
-  background-image: url('wreck-dive-bg.jpg');
-}
-
-.bg-cave {
-  background-image: url('cave-dive-bg.jpg');
-}
-
-.bg-open {
-  background-image: url('openwater-bg.jpg');
-}
-
-.bg-advanced {
-  background-image: url('advanced-bg.jpg');
-}
-
-/* Back to Top Button */
-.back-to-carousel {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #0077cc;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.back-to-carousel:hover {
-  background-color: #005fa3;
-}
-
-/* Scroll Offset */
-.scroll-offset {
-  position: relative;
-}
-
-@media (max-width: 720px) {
-  header {
-    position: static;
-    text-align: center;
-  }
-
-  header h1 {
-    position: sticky;
-    top: 0;
-    background: #0077a3;
-    padding: 1em 0;
-    z-index: 1000;
-  }
-
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
+  width: 
