@@ -156,4 +156,22 @@ footer {
     display: block;
     text-align: center;
   }
+
+  .back-to-carousel {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+.back-to-carousel:hover {
+  background-color: #005fa3;
+}
+
+#carousel {
+  scroll-margin-top: 80px; /* adjust based on header height */
+}
+
 }
